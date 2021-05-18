@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR, en-US">
+<head>
+    <title>A11y | Business Card</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Accessible Business Card. Accessibility is right." />
+    <meta name="keywords" content="Accessible Business Card, Libras, People, Web for All Moviment, Cisarte-NGO, Brazil."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcurt icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC%3A400%2C700%7CLato%3A400%2C700%2C400italic%2C700italic&amp;ver=4.9.8"
+     type="text/css" media="screen"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="print.css" type="text/css" media="print"/> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .p{
+            font-size: 1.8em;
+           
+        }
+        .inner {
+            color:rgb(31, 29, 29);
+        }
+        h1{
+            color: rgb(205,92,92);
+            font-size: 4em;
+        }
+    
+    </style>
+</head>
+<body class="home sticky-menu sidebar-off" id="top">
+<div class="wrap full-wrap">
+    <div class="main-wrap">
+        <section class="main">
+            <article class="post page">
+                <div class="inner">
+                    <h1>Luciene Inácio</h1>
+                    <div class="post-content">
+                       <p><img class="size-full alignleft rounded" src="images/about-me.jpg" alt="Luciene Inácio" width="300" height="300">
+                        <p>Luciene has invited to manage the CISARTE Project - Center for Socio Cultural Integration for Art, Labor, Education and Health - specific to the homeless population – which works in Harm Reduction, Income Generation, Psychological Care, Doctors, Legal, Vocational Workshops, Digital Inclusion and Library. Today, she is currently part of the Board of Directors </p>
+                        <p>
+                            <a target="_self" class="social facebook black" href="https://www.facebook.com/Cisarte-113810153677492/" target=_blank> Facebook&nbsp;</a>
+                            <a target="_self" class="social instagram black" href="https://www.instagram.com/cisarte.rua/?hl=en" target=_blank >&nbsp;Instagram&nbsp;</a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <center><div id="app">
+                    <a href="https://mwpt.com.br/" target="_blank"><button><font color="black"><b>{{text}}</b></font></button></a>            
+                </div></center>
+                <br>           
+            <script>
+                const app= new Vue({
+                el: `#app`,
+                data:{ 
+                    text:`Web for All Moviment from Brazil`
+                }
+        
+            });        
+            </script>
+            </article>          
+            </section>
+            <br>
+            <a href="#top" id="btt">Topo <i class="fa fa-chevron-up"></i></a>
+            <div vw class="enabled" id="PluginLibras" aria-labelledby="tradutordelibras">
+            <div vw-access-button class="active" role="button"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script> 
+        </body>
+        </html>
+        <!--
+	    For promote Accessibility´s Pratice.
+        -->
